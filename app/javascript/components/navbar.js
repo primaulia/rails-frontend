@@ -2,9 +2,10 @@
 const initUpdateNavbarOnScroll = () => {
   const navbar = document.querySelector('.navbar-lewagon');
   const banner = document.querySelector('.banner')
-  // debugger;
+
   if (navbar) {
     window.addEventListener('scroll', () => {
+      console.log('test');
       if (window.scrollY >= banner.offsetHeight) {
         navbar.classList.add('navbar-lewagon-white');
       } else {
